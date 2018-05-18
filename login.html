@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TELEPÊRA</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <button type="button" class="hamburger-symbol"></button>
+    <a type="button" class="logo-symbol1" href="index.html"></a>
+    <div id="header">
+        <div id="header-first">
+            <div id="first-row">
+                <a id="logo" href="index.html">
+                    <div id="logo1"></div>
+                    <div id="logo2"></div>
+                </a>
+                <div id="contactos">
+                    <div class="text-contactos"><b>CONTACTOS</b></div>
+                    <div class="text-contactos">808 43 43 43</div>
+                    <a class="text-contactos2" href="mailto:encomendas@telepera.com?Subject=Nova Encomenda">encomendas@telepera.com</a>
+                </div>
+                <a id="login" href="login.html" class="text-link">LOGIN</a>
+            </div>
+        </div>
+        <div id="header-second">
+            <div id="second-row">
+                <div id="buttons">
+                    <button type="button" id="close-symbol"></button>
+                </div>
+                <div id="menus">
+                    <a id="menu-option" href="promocoes.html" class="text-link">PROMOÇÕES</a>
+                    <a id="menu-option" href="encomendar.html" class="text-link">ENCOMENDAR</a>
+                    <a id="menu-option" href="menus.html" class="text-link">MENUS</a>
+                    <a id="menu-option" href="complementos.html" class="text-link">COMPLEMENTOS</a>
+                    <a id="menu-option" href="about.html" class="text-link">SOBRE A TELEPÊRA</a>
+                </div>
+                <a id="login2" href="login.html" class="menu-option">LOGIN</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-content">
+            <div id="content">
+                <form action="erro.html" method="get" id="mainform">Username<input type="text" id="form"><br>Password<input type="text" id="form" method="get" style="cursor:pointer"><br><br>
+                    <input type="submit" value="LOGIN" style="width:auto; height:25px; background-color:#3C5838; border:1px solid white; border-radius:4px; font-size:15px;color:white;"><br><br>
+                    <a href="erro.html" class="registar">Registar</a>
+                </form>
+            </div>
+            <div id="title-cover">
+                <div id="login-vantagens" >
+                    <div id="LOGIN">LOGIN</div>
+                    <div id="vantagens-container">
+                        <div id="info-symbol"></div>
+                        <div id="vantagens-text">VANTAGENS DE SER SÓCIO TELEPÊRA</div>
+                </div>
+                </div>
+                <div id="vantagens">
+                    <div id="vantagens-title">VANTAGENS DE SER SÓCIO TELEPÊRA</div>
+                    <br><br>
+                    <div id="vantagens-content">&middot ENCOMENDAS ENTREGUES DENTRO DE 30 MINUTOS *<br>&middot PROMOÇÕES ÚNICAS PARA SÓCIOS<br>&middot DESCONTO DE 10% PARA COMPRAS SUPERIORES A 50€<br>&middot DESCONTOS EXCLUSIVOS TELEPÊRA NOS NOSSOS PARCEIROS<br><br><p>*promoção válida mediante a distância da morada de encomenda à Telepêra mais próxima de si.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<!--MENU BUTTON-->
+<script>
+    // MENU BUTTON
+    var w = screen.width;
+    console.log(w);
+    $("#close-symbol").show();
+
+    if (w < 600) {
+        $("#close-symbol").show();
+        $("#header").hide();
+        $("#header-first").hide();
+        $(".hamburger-symbol").show();
+        $(".hamburger-symbol").click(function() {
+            $("#close-symbol").show();
+            $('body').css({
+                'overflow': 'hidden'
+            });
+            $(document).bind('scroll', function() {
+                window.scrollTo(0, 0);
+            });
+            $("#header").slideToggle(200, "swing", function() {
+                $(".hamburger-symbol").hide();
+
+            });
+        });
+
+        $("#close-symbol").click(function() {
+            $("#header").slideToggle(100, function() {
+                $("#close-symbol").hide();
+                $(".hamburger-symbol").show();
+                $(document).unbind('scroll');
+                $('body').css({
+                    'overflow': 'visible'
+                });
+            });
+        });
+    } else {
+        $("#header").show();
+        $("#close-symbol").hide();
+        $(".hamburger-symbol").hide();
+    }
+
+</script>
+
+<!--HEADER SCROLL-->
+<script>
+    var w = screen.width;
+
+    if (w > 600) {
+
+        $(function() {
+            $('#header').data('size', 'big');
+        });
+
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 0) {
+                if ($('#header').data('size') == 'big') {
+                    $('#header').data('size', 'small');
+                    $('#header').animate({
+                        minHeight: '50px',
+                        height: '50px',
+                        borderBottomWidth: '0px'
+                    }, 200, 'swing');
+                    $('#header-first').animate({
+                        minHeight: '50px',
+                        height: '50px',
+                    }, 200, 'swing');
+                    $('#logo1').animate({
+                        marginRight: '2px',
+                        height: '33px',
+                        marginTop: '-4px'
+                    }, 100, 'swing');
+
+                    $('#content').animate({
+                        paddingTop: '150px',
+                    }, 200, 'swing');
+
+                    $('#header-second').hide(100, 'swing');
+                    $('#second-row').hide(100, 'swing');
+                }
+            } else {
+                if ($('#header').data('size') == 'small') {
+                    $('#header').data('size', 'big');
+
+                    $('#content').animate({
+                        paddingTop: '230px',
+                    }, 200, 'swing');
+                    $('#second-row').show(400, 'swing'),
+                        $('#header-second').show(400, 'swing'),
+
+                        $('#logo1').animate({
+                            marginRight: '20px',
+                            height: '100%',
+                            marginTop: '-10px'
+                        }, 200, 'swing');
+                    $('#header').animate({
+                            height: '250px',
+                            minHeight: '80px',
+                            borderBottomWidth: '1px'
+                        }, 400, 'swing'),
+                        $('#header-first').animate({
+                            height: '70%'
+                        }, 400, 'swing');
+
+                }
+            }
+        });
+    }
+
+</script>
+
+</html>

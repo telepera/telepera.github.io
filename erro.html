@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TELEPÊRA</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="erro.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <button type="button" class="hamburger-symbol"></button>
+    <a type="button" class="logo-symbol1" href="index.html"></a>
+    <div id="header">
+        <div id="header-first">
+            <div id="first-row">
+                <a id="logo" href="index.html">
+                    <div id="logo1"></div>
+                    <div id="logo2"></div>
+                </a>
+                <div id="contactos">
+                    <div class="text-contactos"><b>CONTACTOS</b></div>
+                    <div class="text-contactos">808 43 43 43</div>
+                    <a class="text-contactos2" href="mailto:encomendas@telepera.com?Subject=Nova Encomenda">encomendas@telepera.com</a>
+                </div>
+                <a id="login" href="login.html" class="text-link">LOGIN</a>
+            </div>
+        </div>
+        <div id="header-second" style="box-sizing: border-box;">
+            <div id="second-row">
+                <div id="buttons">
+                    <button type="button" id="close-symbol"></button>
+                </div>
+                <div id="menus">
+                    <a id="menu-option" href="promocoes.html" class="text-link">PROMOÇÕES</a>
+                    <a id="menu-option" href="encomendar.html" class="text-link">ENCOMENDAR</a>
+                    <a id="menu-option" href="menus.html" class="text-link">MENUS</a>
+                    <a id="menu-option" href="complementos.html" class="text-link">COMPLEMENTOS</a>
+                    <a id="menu-option" href="about.html" class="text-link">SOBRE A TELEPÊRA</a>
+                </div>
+                <a id="login2" href="pages/login/index.html" class="menu-option">LOGIN</a>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main-content">
+            <div id="erro"></div>
+        </div>
+    </div>
+
+</body>
+
+
+<!--MENU BUTTON-->
+<script>
+    // MENU BUTTON
+    var w = screen.width;
+    console.log(w);
+    $("#close-symbol").show();
+
+    if (w < 600) {
+        $("#close-symbol").show();
+        $("#header").hide();
+        $("#header-first").hide();
+        $(".hamburger-symbol").show();
+        $(".hamburger-symbol").click(function() {
+            $("#close-symbol").show();
+            $('body').css({
+                'overflow': 'hidden'
+            });
+            $(document).bind('scroll', function() {
+                window.scrollTo(0, 0);
+            });
+            $("#header").slideToggle(200, "swing", function() {
+                $(".hamburger-symbol").hide();
+
+            });
+        });
+
+        $("#close-symbol").click(function() {
+            $("#header").slideToggle(100, function() {
+                $("#close-symbol").hide();
+                $(".hamburger-symbol").show();
+                $(document).unbind('scroll');
+                $('body').css({
+                    'overflow': 'visible'
+                });
+            });
+        });
+    } else {
+        $("#header").show();
+        $("#close-symbol").hide();
+        $(".hamburger-symbol").hide();
+    }
+
+</script>
+
+
+</html>

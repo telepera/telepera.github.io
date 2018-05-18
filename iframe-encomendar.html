@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TELEPÊRA</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="iframe-encomendar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script language="javascript" type="text/javascript" src="libraries/jquery-3.2.1.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="main1">
+        <div id="buttons">
+            <a type="button" href="#main1" class="button-box" id="b1-box1">
+                <div class="button-symbol1" style="height: 60%;"></div>
+                <div class="button-text">ESCOLHER</div>
+            </a>
+            <a type="button" href="#main2" class="button-box2" id="b2-box1">
+                <div class="button-symbol2" style="height: 40%;"></div>
+                <div class="button-text" id="button-b2-box1">PERSONALIZAR</div>
+            </a>
+            <a type="button" href="#main3" class="button-box2" id="b3-box1">
+                <div class="button-symbol3" style="height: 40%;"></div>
+                <div class="button-text">FINALIZAR</div>
+            </a>
+        </div>
+        <div id="content1">
+            <div id="buttons-menu">
+                <button onclick="myFunction()" id="button1">     
+                    <div id="MENU1">MENU               ESTUDANTE</div>
+                    <div class="price" id="price1">4.00€</div>
+                </button>
+
+                <button onclick="myFunction2()" id="button2">     
+                    <div id="MENU2">MENU               INDIVIDUAL</div>
+                    <div class="price" id="price2">7.00€</div>
+                </button>
+
+                <button onclick="myFunction3()" id="button3">     
+                    <div id="MENU3">MENU               DUPLO</div>
+                    <div class="price" id="price3">11.00€</div>
+                </button>
+
+                <button onclick="myFunction4()" id="button4">     
+                    <div id="MENU4">MENU               INFANTIL</div>
+                    <div class="price" id="price4">2.00€</div>
+                </button>
+
+                <button onclick="myFunction5()" id="button5">     
+                    <div id="MENU5">MENU               FAMILIAR</div>
+                    <div class="price" id="price5">20.00€</div>
+                </button>
+
+                <button onclick="myFunction6()" id="button6">     
+                    <div id="MENU6">MENU               BIG 25KG</div>
+                    <div class="price" id="price6">45.00€</div>
+                </button>
+
+                <button onclick="myFunction7()" id="button7">     
+                    <div id="MENU7">MENU               BIG 50KG</div>
+                    <div class="price" id="price7">100.00€</div>
+                </button>
+
+                
+            </div>
+            <div class="right-column" id="right-column1">
+                <div class="selection-box">
+                    <div style="height:70%;display:flex; flex-direction:column;align-items:flex-start;">
+                    <b>MENU</b>
+                    <div id="selection-menu" class="selection-menu"></div>
+                    <b>TOPPING</b>
+                    <div id="selection-topping1" class="selection-topping"></div>
+                    <b>BEBIDA</b>
+                    <div id="selection-bebida1" class="selection-bebida"></div>
+                    </div>
+                    <div style="height:20%;display:flex; flex-direction:column;align-items:flex-end;">
+                    <b>PREÇO</b>
+                    <div id="selection-price" class="selection-price"></div>
+                    </div>
+                </div>
+                <a href="#main2" id="next-button"> PRÓXIMO</a>
+            </div>
+        </div>
+    </div>
+    <div id="main2">
+        <div id="buttons">
+            <a type="button" href="#main1" class="button-box2" id="b1-box2">
+                <div class="button-symbol1" style="height: 40%;"></div>
+                <div class="button-text" id="button-b1-box2">ESCOLHER</div>
+            </a>
+            <a type="button" href="#main2" class="button-box" id="b2-box2">
+                <div class="button-symbol2" style="height: 60%;"></div>
+                <div class="button-text" id="button-b2-box2">PERSONALIZAR</div>
+            </a>
+            <a type="button" href="#main3" class="button-box2" id="b3-box2">
+                <div class="button-symbol3" style="height: 40%;"></div>
+                <div class="button-text" id="button-b3-box2">FINALIZAR</div>
+            </a>
+        </div>
+        <div id="content2">
+            <div id="topping-menu">
+                <div id="toppings">TOPPINGS</div>
+                <div id="toppings-row">
+                    <button onclick="functionTopping1()" id="top1">CHANTILLY</button>
+                    <button onclick="functionTopping2()" id="top2">CHOCOLATE</button>
+                    <button onclick="functionTopping3()" id="top3">CREME DE QUEIJO</button>
+                </div>
+                <div id="bebidas">BEBIDAS</div>
+                <div id="bebidas-row">
+                    <button onclick="functionTopping4()" id="top4">ÁGUA</button>
+                    <button onclick="functionTopping5()" id="top5">COLA</button>
+                    <button onclick="functionTopping6()" id="top6">ICE TEA</button>
+                </div>
+                <div id="extra-row">
+                    <button onclick="functionToppingExtra()" id="extra">BATIDO DE PÊRA</button>
+                </div>
+            </div>
+            <div class="right-column" id="right-column2">
+                <div class="selection-box">
+                    <div style="height:70%;display:flex; flex-direction:column;align-items:flex-start;">
+                    <b>MENU</b>
+                    <div id="selection-menu2" class="selection-menu"></div>
+                    <b>TOPPING</b>
+                    <div id="selection-topping2" class="selection-topping"></div>
+                    <b>BEBIDA</b>
+                    <div id="selection-bebida2" class="selection-bebida"></div>
+                    </div>
+                    <div style="height:20%;display:flex; flex-direction:column;align-items:flex-end;">
+                    <b>PREÇO</b>
+                    <div id="selection-price2" class="selection-price"></div>
+                    </div>
+                </div>
+                <a href="#main3" id="next-button"> PRÓXIMO</a>
+            </div>
+        </div>
+    </div>
+    <div id="main3">
+        <div id="buttons">
+            <a type="button" href="#main1" class="button-box2" id="b1-box3">
+                <div class="button-symbol1" style="height: 40%;"></div>
+                <div class="button-text">ESCOLHER</div>
+            </a>
+            <a type="button" href="#main2" class="button-box2" id="b2-box3">
+                <div class="button-symbol2" style="height: 40%;"></div>
+                <div class="button-text" id="button-b2-box3">PERSONALIZAR</div>
+            </a>
+            <a type="button" href="#main3" class="button-box" id="b3-box3">
+                <div class="button-symbol3" style="height:60%;"></div>
+                <div class="button-text">FINALIZAR</div>
+            </a>
+        </div>
+        <div id="content3">
+            <div id="forms-menu">
+                <div id="encomenda">
+                    <b>ENCOMENDA</b><br>Nome<br>
+                    <input type="text" class="input"><br> Contacto
+                    <br>
+                    <input type="tel" class="input"><br> Morada
+                    <br>
+                    <input type="text" class="input"><br> Código Promocional<br>
+                    <input type="text" class="input">
+                </div>
+                <div id="pagamento">
+                    <div id="pagamento-title">Método de Pagamento
+                    </div>
+                    <div id="pagamento-container1">
+                        <div id="pagamento-container2">
+                            <button onclick="" class="pagamento-box">VISA</button>
+                            <button onclick="" class="pagamento-box">NA ENTREGA</button>
+                        </div>
+                        <a href="#main4" id="concluido">CONCLUÍDO</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column" id="right-column3">
+                <div class="selection-box" id="selection-box3">
+                    <div style="height:70%;display:flex; flex-direction:column;align-items:flex-start;">
+                    <b>MENU</b>
+                    <div id="selection-menu3" class="selection-menu"></div>
+                    <b>TOPPING</b>
+                    <div id="selection-topping3" class="selection-topping"></div>
+                    <b>BEBIDA</b>
+                    <div id="selection-bebida3" class="selection-bebida"></div>
+                    </div>
+                    <div style="height:20%;display:flex; flex-direction:column;align-items:flex-end;">
+                    <b>PREÇO</b>
+                    <div id="selection-price3" class="selection-price"></div>
+                    </div>
+                </div>
+                <a href="#main4" id="next-button3"> FINALIZAR</a>
+            </div>
+        </div>
+    </div>
+    <div id="main4">
+        <div id="content4">
+            <div id="title4">A SUA ENCOMENDA ESTÁ <br>EM PROCESSAMENTO</div>
+            <div id="ilustracao"></div>
+            <a href="#main3" id="next-button4"> VOLTAR</a>        
+        </div>
+    </div>
+</body>
+
+<script>
+    function myFunction() {
+        var str = document.getElementById("MENU1").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price1").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction2() {
+        var str = document.getElementById("MENU2").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price2").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction3() {
+        var str = document.getElementById("MENU3").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price3").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction4() {
+        var str = document.getElementById("MENU4").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price4").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction5() {
+        var str = document.getElementById("MENU5").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price5").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction6() {
+        var str = document.getElementById("MENU6").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price6").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+    function myFunction7() {
+        var str = document.getElementById("MENU7").innerHTML;
+        var res = str.replace("--selection--");
+        document.getElementById("selection-menu").innerHTML = res;
+        document.getElementById("selection-menu2").innerHTML = res;
+        document.getElementById("selection-menu3").innerHTML = res;
+        
+        var price = document.getElementById("price7").innerHTML;
+        document.getElementById("selection-price").innerHTML = price;
+        document.getElementById("selection-price2").innerHTML = price;
+        document.getElementById("selection-price3").innerHTML = price;
+    }
+
+</script>
+
+<script>
+    function functionTopping1() {
+        var str = document.getElementById("top1").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-topping1").innerHTML = res;
+        document.getElementById("selection-topping2").innerHTML = res;
+        document.getElementById("selection-topping3").innerHTML = res;
+    }
+
+    function functionTopping2() {
+        var str = document.getElementById("top2").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-topping1").innerHTML = res;
+        document.getElementById("selection-topping2").innerHTML = res;
+        document.getElementById("selection-topping3").innerHTML = res;
+    }
+
+    function functionTopping3() {
+        var str = document.getElementById("top3").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-topping1").innerHTML = res;
+        document.getElementById("selection-topping2").innerHTML = res;
+        document.getElementById("selection-topping3").innerHTML = res;
+    }
+
+    function functionTopping4() {
+        var str = document.getElementById("top4").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-bebida1").innerHTML = res;
+        document.getElementById("selection-bebida2").innerHTML = res;
+        document.getElementById("selection-bebida3").innerHTML = res;
+    }
+
+    function functionTopping5() {
+        var str = document.getElementById("top5").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-bebida1").innerHTML = res;
+        document.getElementById("selection-bebida2").innerHTML = res;
+        document.getElementById("selection-bebida3").innerHTML = res;
+    }
+
+    function functionTopping6() {
+        var str = document.getElementById("top6").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-bebida1").innerHTML = res;
+        document.getElementById("selection-bebida2").innerHTML = res;
+        document.getElementById("selection-bebida3").innerHTML = res;
+    }
+
+    function functionToppingExtra() {
+        var str = document.getElementById("extra").innerHTML;
+        var res = str.replace("--selection--", "");
+        document.getElementById("selection-bebida1").innerHTML = res;
+        document.getElementById("selection-bebida2").innerHTML = res;
+        document.getElementById("selection-bebida3").innerHTML = res;
+    }
+
+</script>
+
+</html>

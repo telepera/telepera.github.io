@@ -1,0 +1,727 @@
+ @import url('https://fonts.googleapis.com/css?family=Cabin');
+ body {
+     width: 100%;
+     height: 100%;
+     background-color: blue;
+     margin: 0px;
+     display: flex;
+     flex-direction: column;
+     font-family: 'Cabin', sans-serif;
+     color: #333333;
+ }
+ 
+ #main1 {
+     width: 100%;
+     height: 100vh;
+     background-color: #F3F3F3;
+     display: flex;
+     flex-direction: column;
+     box-sizing: padding-box;
+ }
+ 
+ #buttons {
+     width: 100%;
+     height: 80px;
+     background-color: none;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ .button-box {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 19px;
+     font-weight: bold;
+     text-decoration: none;
+     color: #333333;
+ }
+ 
+ .button-box2 {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     font-size: 16px;
+     font-weight: bold;
+     text-decoration: none;
+     color: #333333;
+ }
+ 
+ #b1-box1 {
+     width: 40%;
+     height: 100%;
+     background-color: #f3f3f3;
+ }
+ 
+ #b2-box1 {
+     width: 30%;
+     height: 100%;
+     background-color: #CCEBC9;
+     opacity: 50%;
+ }
+ 
+ #b3-box1 {
+     width: 30%;
+     height: 100%;
+     background-color: #A7DCA1;
+ }
+ 
+ #b1-box2 {
+     width: 30%;
+     height: 100%;
+     background-color: #CCEBC9;
+ }
+ 
+ #b2-box2 {
+     width: 40%;
+     height: 100%;
+     background-color: #f3f3f3;
+ }
+ 
+ #b3-box2 {
+     width: 30%;
+     height: 100%;
+     background-color: #A7DCA1;
+ }
+ 
+ #b1-box3 {
+     width: 30%;
+     height: 100%;
+     background-color: #CCEBC9;
+ }
+ 
+ #b2-box3 {
+     width: 30%;
+     height: 100%;
+     background-color: #A7DCA1;
+ }
+ 
+ #b3-box3 {
+     width: 40%;
+     height: 100%;
+     background-color: #f3f3f3;
+ }
+ 
+ .button-symbol1 {
+     width: 70px;
+     background-image: url(files/pera-symbol.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-right: 10px;
+     margin-left: 20px;
+ }
+ 
+ .button-symbol2 {
+     width: 70px;
+     background-image: url(files/topping-symbol.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-right: ;
+     margin-left: 10px;
+ }
+ 
+ .button-symbol3 {
+     width: 70px;
+     background-image: url(files/delivery-symbol.svg);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     margin-right: ;
+     margin-left: 10px;
+ }
+ 
+ #content1 {
+     /*  width: 800px*/
+     width: 100%;
+     height: 520px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 50px 0px 40px 0px;
+     align-items: flex-start;
+ }
+ 
+ #buttons-menu {
+     width: 400px;
+     /*    max-width: 300px;*/
+     height: 90%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-left: 45px;
+ }
+ 
+.price {
+    margin-left: 215px;
+    font-weight: bold;
+}
+
+ #button1,
+ #button2,
+ #button3,
+ #button4,
+ #button5,
+ #button6,
+ #button7 {
+     width: 100%;
+     height: 40px;
+     background-color: white;
+     border-radius: 5px;
+     border: 1px solid #aaaaaa;
+     text-align: left;
+     cursor: pointer;
+     font-family: 'Cabin', sans-serif;
+     color: #333333;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+ 
+ #button1:checked,
+ #button2:focus,
+ #button3:focus,
+ #button4:focus,
+ #button5:focus,
+ #button6:focus,
+ #button7:focus {
+     border: 1px solid #83CF7A;
+ }
+ /*SELECTION BOX*/
+ 
+ .right-column {
+     width: 250px;
+     /*    max-width: 100px;*/
+     height: 100%;
+     margin-right: 45px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ 
+ .selection-box {
+     width: 100%;
+     height: 80%;
+     background-color: white;
+     border-radius: 5px;
+     border: 1px solid #aaaaaa;
+     padding: 10px 15px 20px 15px;
+     box-sizing: border-box;
+     justify-content: space-around;
+     flex-direction: column;
+     display: flex;
+     text-align: left;
+     font-size: 15px;
+ }
+
+.selection-menu {
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}.selection-topping {
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}.selection-bebida {
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}.selection-price {
+    display: flex;
+    align-self: flex-end;
+    text-align: right;
+    margin-top: 10px;
+
+}
+
+ 
+ #next-button,
+ #next-button3 {
+     width: 100px;
+     height: 40px;
+     background-color: white;
+     border: 1px solid #83CF7A;
+     border-radius: 5px;
+     margin-right: 0px;
+     margin-left: auto;
+     text-align: center;
+     text-decoration: none;
+     font-size: 12px;
+     color: #333333;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ /*MAIN 2*/
+ 
+ #main2 {
+     width: 100%;
+     height: 100vh;
+     background-color: #F3F3F3;
+     display: flex;
+     flex-direction: column;
+     box-sizing: padding-box;
+ }
+ 
+ #content2 {
+     /*  width: 800px*/
+     width: 100%;
+     height: 520px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 50px 0px 40px 0px;
+     align-items: flex-start;
+ }
+ 
+ #topping-menu {
+     width: 400px;
+     /*  max-width: 300px;*/
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-left: 45px;
+     flex-wrap: wrap;
+     justify-content: space-between
+ }
+ 
+#toppings, #bebidas {
+    width: 100%;
+    font-size: 18px;
+    color: #333333;
+    font-weight: bold;
+}
+
+#toppings-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#bebidas-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#extra-row {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ 
+ #top1,
+ #top2,
+ #top3,
+ #top4,
+ #top5,
+ #top6,
+ #extra {
+     width: 120px;
+     height: 80px;
+     background-color: white;
+     border: 1px solid #aaaaaa;
+     border-radius: 5px;
+     display: flex;
+     cursor: pointer;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     font-family: 'Cabin', sans-serif;
+ }
+ 
+
+
+
+/*MAIN 3*/
+
+ #main3 {
+     width: 100%;
+     height: 100vh;
+     background-color: #F3F3F3;
+     display: flex;
+     flex-direction: column;
+     box-sizing: padding-box;
+ }
+ 
+ #content3 {
+     /*  width: 800px*/
+     width: 100%;
+     height: 520px;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     padding: 50px 0px 40px 0px;
+     align-items: flex-start;
+ }
+ 
+ #forms-menu {
+     width: 400px;
+     /*  max-width: 300px;*/
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     margin-left: 45px;
+     flex-wrap: wrap;
+     justify-content: space-between
+ }
+ 
+ #encomenda {
+     line-height: 23px;
+ }
+ 
+ .input {
+     width: 100%;
+     border: 1px solid #aaaaaa;
+     border-radius: 3px;
+ }
+ 
+ #pagamento-container1 {
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+ }
+ 
+ #pagamento-container2 {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 220px;
+ }
+ 
+ #pagamento {
+     display: flex;
+     flex-direction: column;
+     height: 90px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ #pagamento-title {
+     font-weight: bold;
+ }
+ 
+ .pagamento-box {
+     width: 100px;
+     height: 50px;
+     background-color: white;
+     border-radius: 5px;
+     border: 1px solid #aaaaaa;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ #concluido {
+     display: none;
+ }
+
+
+/*MAIN4*/
+
+#main4 {
+    background-color: white;
+}
+
+#content4 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0px 40px 0px;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+#title4 {
+    width: 90%;
+    display: flex;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+#ilustracao {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    background-image: url(files/delivery-van.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    
+}
+
+#next-button4 {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    margin-right: 45px;
+    
+    border: 1px solid #83CF7A;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+
+
+ @media only screen and (max-width: 600px) {
+     #main1 {
+         width: 100vw;
+         height: 100vh;
+     }
+     #main2 {
+         width: 100vw;
+         height: 100vh;
+     }
+     #main3 {
+         width: 100vw;
+         height: 100vh;
+     }
+     #main4 {
+         width: 100vw;
+         height: 100vh;
+     }
+     #b3-box1 {
+         display: none;
+     }
+     /*
+     #b1-box2 {
+         display: none;
+     }
+*/
+     #b1-box1 {
+         width: 70%;
+     }#b2-box1 {
+         width: 30%;
+     }
+     
+     #button-b2-box1 {
+         display: none;
+     }#button-b1-box2 {
+         display: none;
+     }#button-b3-box2 {
+         display: none;
+     }#button-b2-box3 {
+         display: none;
+     }
+     
+     #button-b2-box2 {
+         font-size: 16px;
+     }
+     
+     #b1-box2 {
+         width: 20%;
+     }#b2-box2 {
+         width: 60%;
+     }#b3-box2 {
+         width: 20%;
+     }
+     
+     #b3-box3 {
+         width: 60%;
+     }#b2-box3 {
+         width: 40%;
+     }
+     
+     #b1-box3 {
+         display: none;
+     }
+     #content1 {
+         flex-direction: column;
+         padding: 20px 15px 20px 15px;
+         box-sizing: border-box;
+     }
+     #content2 {
+         flex-direction: column;
+         padding: 20px 15px 20px 15px;
+         box-sizing: border-box;
+     }
+     #buttons-menu {
+         width: 100%;
+         margin: 0px;
+     }
+     
+     #button1,
+     #button2,
+     #button3,
+     #button4,
+     #button5,
+     #button6,
+     #button7 {
+         width: 100%;
+         height: 50px;
+         background-color: white;
+         border-radius: 5px;
+         border: 1px solid #aaaaaa;
+         text-align: left;
+         cursor: pointer;
+         font-family: 'Cabin', sans-serif;
+         color: #333333;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         padding: 10px;
+         box-sizing: border-box;
+     }
+     
+     #MENU1, #MENU2, #MENU3, #MENU4, #MENU5, #MENU6, #MENU7 {
+         width: 150px;
+     }
+     
+     .price {
+         margin-left: 0px;
+     }
+     
+     
+     .selection-box {
+         display: none;
+     }
+     #selection-box3 {
+         display: flex;
+         flex-wrap: wrap;
+     }
+     .right-column {
+         width: 100%;
+         height: 50px;
+         margin: 0px;
+         margin-top: 20px;
+         justify-content: flex-end;
+     }
+     #topping-menu {
+         width: 100%;
+         height: 90%;
+         margin: 0px;
+     }
+     #top1,
+     #top2,
+     #top3,
+     #top4,
+     #top5,
+     #top6,
+     #extra {
+         width: 100px;
+         height: 70px;
+         background-color: white;
+         border: 1px solid #aaaaaa;
+         border-radius: 5px;
+         display: flex;
+     }
+     
+     #toppings, #bebidas {
+         margin-top: 10px;
+         margin-left: 5px;             
+     }
+     
+     #content3 {
+         padding: 20px 15px 20px 15px;
+         box-sizing: border-box;
+         flex-direction: column-reverse;
+         justify-content: space-between;
+     }
+     #forms-menu {
+         width: 100%;
+         height: 300px;
+         margin: 0px;
+     }
+     #encomenda {
+         line-height: 22px;
+     }
+     #right-column3 {
+         height: 190px;
+         margin-top: 0px;
+         justify-content: flex-start;
+         margin-bottom: 15px;
+     }
+     #selection-box3 {
+         height: 100%;
+     }
+     #next-button3 {
+         display: none;
+     }
+     #pagamento {
+         height: auto;
+         display: flex;
+         justify-content: space-between;
+     }
+     #pagamento-container1 {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         margin-top: 5px;
+     }
+     #pagamento-container2 {
+         width: 160px;
+         display: flex;
+         justify-content: space-between;
+         flex-direction: row;
+     }
+     .pagamento-box {
+         width: 72px;
+         height: 40px;
+         font-size: 14px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         cursor: pointer;
+         font-family: 'Cabin', sans-serif;
+     }
+     #concluido {
+         width: 100px;
+         height: 40px;
+         display: flex;
+         background-color: white;
+         border-radius: 5px;
+         border: 1px solid #83CF7A;
+         text-align: center;
+         align-items: center;
+         justify-content: center;
+         align-self: flex-end;
+         font-size: 12px;
+         font-weight: bold;
+         color: #333333;
+         text-decoration: none;
+     }
+     
+     #content4 {
+         padding: 20px 15px 20px 15px;
+     }
+     
+     #ilustracao {
+         background-size: 60%;
+     }
+     
+     #next-button4 {
+         margin-right: 0px;
+         font-weight: bold;
+     }
+     
+ }

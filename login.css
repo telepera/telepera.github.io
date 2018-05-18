@@ -1,0 +1,591 @@
+ @import url('https://fonts.googleapis.com/css?family=Cabin');
+
+
+body {
+    background-color: #f3f3f3;
+    margin: 0px;
+    font-family: 'Cabin', sans-serif;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+#main {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+
+/*---------HEADER----------*/
+
+#header {
+    width: 100%;
+    height: 250px;
+    max-height: 150px;
+    min-height: 80px;
+    background-color: white;
+    border: 1px solid #83CF7A;
+    box-sizing: content-box;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: visible;
+    z-index: 100;
+}
+
+#header-first {
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-bottom: 1px solid #83CF7A;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+#header-second {
+    width: 100%;
+    height: 30%;
+    max-height: 150px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+/*FIRST ROW*/
+
+#first-row {
+    width: 100%;
+    max-width: 900px;
+    min-width: 730px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 70px;
+    z-index: 2;
+}
+
+#logo {
+    width: auto;
+    height: 50%;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    box-sizing: content-box;
+}
+#logo1 {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    background-image: url(files/telepera-logo-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    overflow: visible;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+#logo:hover #logo1 {
+    background-image: url(files/telepera-logo-green.svg);
+}#logo:hover #logo2 {
+    background-image: url(files/telepera-text-only-green.svg);
+}
+
+#logo2 {
+    width: 150px;
+    max-height: 90px;
+    height: 100%;
+    display: flex;
+    background-image: url(files/telepera-text-only-black.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    overflow: visible;
+    align-self: center;
+    margin-top: -7px;
+}
+#logo2:hover {
+    background-image: url(files/telepera-text-only-green.svg);
+}
+
+#contactos {
+    min-width: 400px;
+    height: 100%s;
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    justify-content: space-between;
+    font-size-adjust: auto;
+    align-items: center;
+}
+
+#login {
+    width: auto;
+    height: auto;
+    display: flex;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 10px;
+    align-items: center;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    color: #333333;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+}
+
+#login:hover {
+    color: #83CF7A;
+}
+
+.text-contactos {
+    margin: 0px 10px 0px 10px;
+    font-size-adjust: auto;
+    min-width: 100px;
+}
+.text-contactos2 {
+    margin: 0px 10px 0px 10px;
+    font-size-adjust: auto;
+    min-width: 100px;
+    color: #333333;
+    text-decoration: none;
+}.text-contactos2:hover {
+    color: #83CF7A;
+}
+
+.text-link {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/*SECOND-ROW*/
+
+.hamburger-symbol {
+    display: none;
+}
+
+.close-symbol {
+    display: none;
+}
+
+#second-row {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#menus {
+    min-width: 600px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+#menu-option:hover {
+    color: #83CF7A;
+}
+
+#login2 {
+    display: none;
+}
+
+
+/*-----------HEADER-----------*/
+
+
+/*--------MAIN-CONTENT--------*/
+
+#main-content {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#title-cover {
+    height: 700px;
+    width: 100%;
+    background-color: #3C5838;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 100px;
+}
+
+#LOGIN {
+    width: 200px;
+    height: 70px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-transform: uppercase;
+}
+
+#content {
+    width: 100%;
+    height: 300px;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    padding-top: 230px;
+    margin-bottom: 150px;
+
+
+}
+
+#mainform {
+    width: auto;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#form {
+    display: flex;
+    background-color: white; 
+    border: 1px solid #444444; 
+    border-radius: 3px; 
+    width: 200px;
+    height: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.registar {
+    font-size: 16px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    color: #333333;
+}
+.registar:hover {
+    color: #3C5838;
+}
+
+#login-vantagens {
+        width: 75%; 
+        max-width:900px; 
+        height:auto; 
+        display:flex; 
+        flex-direction:row;
+        justify-content: space-between;
+    }
+    
+
+#vantagens-container {
+    width: 300px;
+    height: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;   
+    align-content:flex-end; 
+}
+
+
+#info-symbol {
+    width: 50px;
+    height: 100%;
+    
+    background-image: url(files/info.svg);
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#vantagens-text {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+    align-items: center;
+    
+    margin-left: 10px;
+}
+
+
+
+
+#vantagens {
+    width: 80%;
+    max-width: 900px;
+    height: 400px;
+    
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#vantagens-title {
+    font-size: 25px;
+    color: white;
+    text-decoration: underline;
+}
+
+#vantagens-content {
+    font-size: 16px;
+    color: white;
+    line-height: 30px;
+}
+#vantagens-content p {
+    font-size: 12px;
+}
+
+
+/*--------MAIN-CONTENT--------*/
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: #f3f3f3;
+        width: 100vw;
+        height: 100%;
+    }
+    #header {
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+        display: block;
+        max-height: none;
+        z-index: 10;
+        position: fixed;
+        border: none;
+    }
+    #header-first {
+        height: 90%;
+        width: 100%;
+        max-height: none;
+        background-color: white;
+        border: 1px solid #83CF7A;
+    }
+    #header-second {
+        width: 100%;
+        height: 90%;
+        max-height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border: 1px solid #83CF7A;
+        box-sizing: border-box;
+    }
+    #first-row {
+        width: 0px;
+        height: 0px;
+        visibility: initial;
+        display: flex;
+        float: left;
+        display: none;
+    }
+    #second-row {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 22px;
+        display: flex;
+    }
+    .hamburger-symbol {
+        display: flex;
+        width: 30px;
+        min-height: 30px;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        z-index: 10;
+        overflow: visible;
+        background-image: url(files/menu.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+    }
+    .logo-symbol1 {
+        display: flex;
+        width: 35px;
+        height: 55px;
+        position: absolute;
+        top: 13px;
+        left: 30px;
+        z-index: 20;
+        overflow: visible;
+        background-image: url(files/telepera-logo-black.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+    }
+    #buttons {
+        width: 100vw;
+        min-height: 50px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin: 25px 0px auto 0px;
+    }
+    #close-symbol {
+        display: flex;
+        align-self: flex-start;
+        width: 30px;
+        min-height: 30px;
+        overflow: visible;
+        background-image: url(files/close.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: transparent;
+        border: none;
+        margin-right: 30px;
+    }
+    #menus {
+        width: 100%;
+        min-width: 50px;
+        height: 100%;
+        max-height: 400px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        text-align: center;
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 0px;
+    }
+    #menu-option {
+        width: auto;
+    }
+    #login2 {
+        height: 30px;
+        display: flex;
+        align-self: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 14px;
+        color: #333333;
+        margin: 50px auto 50px auto;
+    }
+    
+    /*--------CONTENT-------*/
+    #main {
+        height: auto;
+    }
+    #main-content {
+        height: auto;
+        box-sizing: content-box;
+    }
+
+    #content {
+        padding-top: 150px;
+        margin-bottom: 75px;
+    }
+    
+    #title-cover {
+        height: 600px;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #mainform {
+        width: 80%;
+        height: auto;
+        align-self: center;
+        font-size: 18px;
+    }
+    
+    #form {
+        width: 220px;
+        height: 28px;
+        font-size: 18px;
+        padding-left: 10px;
+        margin-top: 8px;
+    }
+    
+    .registar {
+        font-size: 18px;
+    }
+    
+    #login-vantagens {
+        width: 75%; 
+        max-width:900px; 
+        height:300px; 
+        display:flex; 
+        flex-direction:column;
+        justify-content: space-between;
+    }
+    
+    #vantagens-container {
+        font-size: 10px;
+        height: 200px; 
+        width: 120%;
+        justify-content: flex-start;
+        align-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: -13px;
+    }
+    #vantagens-text {
+        width: 250px;
+        align-self: center;
+        height: 80%;
+    }
+    #info-symbol {
+        height: 30%;
+        background-position: right;
+        width: 40px;
+    }
+    
+    #vantagens-title {
+        display: none;
+    }
+    
+    #vantagens {
+        margin-top: 0px;
+        width: 70%;
+        font-size: 
+    }
+    #vantagens-content {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+}
+
+
